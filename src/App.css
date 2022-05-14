@@ -1,0 +1,13 @@
+
+
+.nav {
+  /* border: 1px solid green ; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.App {
+  /* border: 1px solid red; */
+  text-align: center;
+  margin-top: 50px;
+}
