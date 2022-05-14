@@ -7,14 +7,19 @@ function App() {
 
  const [counter,setCounter] = useState(0);
  const handleChange = (value) => {
+  //condtion
   if (counter >= 10) {
+    alert ("Counter reached maximum value");
     return;
   }
-  //  if (counter <= 0) {
-  //   return;
-  // }
+
    setCounter(counter+value)
  }
+
+  // if (counter >= 10) {
+  //   return <h3>Counter reached maximum value</h3>
+  // }
+
 //  const handleDecrement = (value) => {
 //   if(counter <= 0) {
 //     return
@@ -48,7 +53,12 @@ function App() {
         handleChange(-1)
       }}>substract1</button>
 
+     <div>Number is {counter %2 === 0 ? "Even" : "Odd"} </div>
+
     </div>
+
+       
+
     </>
   )
 }
